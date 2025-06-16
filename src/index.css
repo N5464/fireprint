@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Override default font for all elements */
+* {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+}
+
+/* Specific font styles for different elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Code and monospace elements */
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* Button and interactive elements */
+button, .btn, [role="button"] {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Input elements */
+input, textarea, select {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* Labels and form text */
+label {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Body text */
+p, span, div {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+a {
+  font-weight: 500;
+  color: #22c55e;
+  text-decoration: inherit;
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #16a34a;
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  letter-spacing: 0.1em;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s, text-shadow 0.25s;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+button:hover {
+  border-color: #22c55e;
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 142 76% 36%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+  }
+}

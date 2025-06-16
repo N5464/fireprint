@@ -1,0 +1,293 @@
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000000;
+  overflow-x: hidden;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+html {
+  background-color: #000000;
+  overflow-x: hidden;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+/* Optimized scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #18181b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #52525b;
+}
+
+/* Hardware-accelerated animations with crypto styling */
+* {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, text-shadow 0.2s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+/* Crypto-style text effects */
+.fireprint-title {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+}
+
+.crypto-subtitle {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hacker-mono {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.underground-text {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* Underground title styling for hidden headlines */
+.underground-title {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* Enable hardware acceleration for better performance */
+.will-change-transform {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Optimized backdrop blur support */
+@supports (backdrop-filter: blur(8px)) {
+  .backdrop-blur-sm {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+}
+
+/* Ensure no horizontal overflow */
+* {
+  max-width: 100%;
+}
+
+/* Force black background on root elements */
+body {
+  background-color: #000000 !important;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+html {
+  background-color: #000000 !important;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+/* Performance optimizations */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Optimize font rendering for crypto fonts */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+/* Improve touch targets on mobile */
+@media (max-width: 768px) {
+  button, a, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Optimize focus states for accessibility and performance */
+:focus-visible {
+  outline: 2px solid #22c55e;
+  outline-offset: 2px;
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+}
+
+/* Remove default focus styles */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Enhanced button styles for crypto aesthetic */
+button {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+}
+
+/* Input field crypto styling */
+input, textarea {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Label crypto styling */
+label {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Card title styling */
+.card-title {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Modal title styling */
+.modal-title {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Price styling */
+.price-text {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Badge styling */
+.badge-text {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+/* Gatekeeper section styling */
+.gatekeeper-text {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-shadow: 0 0 30px rgba(239, 68, 68, 0.3);
+}
+
+/* CTA section styling */
+.cta-title {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Success modal styling */
+.success-title {
+  font-family: 'Staatliches', 'JetBrains Mono', 'Courier New', monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Underground hover effects for hidden headlines */
+.text-shadow-glow {
+  text-shadow: 0 0 15px rgba(34, 197, 94, 0.6), 0 0 25px rgba(34, 197, 94, 0.4), 0 0 35px rgba(34, 197, 94, 0.2);
+}
+
+/* Enhanced underground card effects - Apply to ALL devices */
+.group:hover .underground-title,
+.group:active .underground-title {
+  filter: brightness(1.2) saturate(1.3);
+  text-shadow: 0 0 15px rgba(34, 197, 94, 0.6), 0 0 25px rgba(34, 197, 94, 0.4), 0 0 35px rgba(34, 197, 94, 0.2);
+}
+
+/* Smooth underground reveal animation for ALL devices */
+@keyframes underground-reveal {
+  from {
+    opacity: 0.1;
+    transform: translateY(5px) scale(0.98);
+    filter: blur(1px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1.05);
+    filter: blur(0);
+  }
+}
+
+.group:hover .underground-title,
+.group:active .underground-title {
+  animation: underground-reveal 0.5s ease-out forwards;
+}
+
+/* Mobile touch optimization for underground effect */
+@media (max-width: 768px) {
+  /* Enable touch-based reveal on mobile */
+  .group:active .underground-title {
+    opacity: 1 !important;
+    transform: translateY(0) scale(1.05) !important;
+    filter: blur(0) !important;
+    text-shadow: 0 0 15px rgba(34, 197, 94, 0.6), 0 0 25px rgba(34, 197, 94, 0.4), 0 0 35px rgba(34, 197, 94, 0.2) !important;
+  }
+  
+  /* Longer touch feedback duration on mobile */
+  .underground-title {
+    transition-duration: 0.3s;
+  }
+  
+  /* Enhanced touch targets */
+  .group {
+    -webkit-tap-highlight-color: rgba(34, 197, 94, 0.1);
+  }
+}
+
+/* Desktop-specific enhancements */
+@media (min-width: 769px) {
+  .group:hover .underground-title {
+    transition-duration: 0.5s;
+  }
+}
