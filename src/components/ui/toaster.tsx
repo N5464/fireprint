@@ -1,4 +1,4 @@
-import { useToast } from '@/hooks/use-toast';
+// import { useToast } from '@/hooks/use-toast';
 import {
   Toast,
   ToastClose,
@@ -9,10 +9,18 @@ import {
 } from '@/components/ui/toast';
 
 export function Toaster() {
-  const { toasts } = useToast();
+  const toasts = [
+    {
+      id: 'dummy1',
+      title: '🔥 FirePrint Deployed',
+      description: 'Welcome to the darkflow.',
+      action: null,
+    },
+  ];
 
   return (
     <ToastProvider>
+      {/* @ts-ignore */}
       {toasts.map(function ({ id, title, description, action, ...props }) {
         return (
           <Toast key={id} {...props}>
