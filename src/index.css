@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Orbitron', 'Rajdhani', 'JetBrains Mono', 'Courier New', monospace;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Override default font for all elements */
+* {
+  font-family: 'Orbitron', 'Rajdhani', 'JetBrains Mono', 'Courier New', monospace;
+}
+
+/* Specific font styles for different elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', 'Rajdhani', 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Code and monospace elements */
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* Button and interactive elements */
+button, .btn, [role="button"] {
+  font-family: 'Orbitron', 'Rajdhani', 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Input elements */
+input, textarea, select {
+  font-family: 'Rajdhani', 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Labels and form text */
+label {
+  font-family: 'Orbitron', 'Rajdhani', 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Body text */
+p, span, div {
+  font-family: 'Rajdhani', 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+a {
+  font-weight: 600;
+  color: #22c55e;
+  text-decoration: inherit;
+  font-family: 'Orbitron', 'Rajdhani', 'JetBrains Mono', 'Courier New', monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #16a34a;
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: 'Orbitron', 'Rajdhani', 'JetBrains Mono', 'Courier New', monospace;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s, text-shadow 0.25s;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+button:hover {
+  border-color: #22c55e;
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
